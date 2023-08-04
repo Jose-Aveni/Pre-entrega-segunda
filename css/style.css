@@ -4,10 +4,7 @@
 }
 header{
     background-color: rgb(168, 228, 228);
-    padding: 10px 0px;
-}
-header nav{
-    display: flex;
+    padding: 5px 0px;
 }
 header ul{
     display: flex;
