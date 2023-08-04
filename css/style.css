@@ -20,6 +20,13 @@ body li{
 }
 body a{
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+}
+body a:hover{
+    color: rgba(0, 0, 0, 0.75);
+}
+body a:active{
     color: black;
 }
 .logo{
@@ -38,7 +45,7 @@ footer{
     height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 footer p{
     margin-right: 5px;
