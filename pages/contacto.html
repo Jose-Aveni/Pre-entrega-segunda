@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-12 d-flex justify-content-center col-md-7">
                     <nav>
-                        <ul>
+                        <ul class="d-flex flex-wrap flex-md-nowrap justify-content-center">
                             <li class="mx-md-3">
                                 <a href="../index.html">Inicio</a>
                             </li>
@@ -52,9 +52,73 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="mainContacto">
+            <section class="container min-vh-100">
+                <h1>Contacto</h1>
+                <hr>
+                <h3>Contáctanos para estar siempre al tanto de lo nuevo:</h3>
+                <div class="row">
+                    <form class="col-12 d-flex justify-content-center align-content-center"
+                          name="contacto"
+                          action="reception_data.py"
+                          method="post"
+                          enctype="text/plain">
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" value="" name="nombre" id="nombre" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" value="" name="apellido" id="apellido" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" value="" name="email" id="email" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="estado">Estado civil</label>
+                                <select name="estado" id="estado" required>
+                                    <option value="Soltero">Soltero</option>
+                                    <option value="Casado">Casado</option>
+                                    <option value="Viudo">Viudo</option>
+                                    <option value="Divorciado">Divorciado</option>
+                                </select>
+                            </div>
+                            <br>
+                            <hr>
+                            <legend>Comentarios</legend>
+                            <div>
+                                <label for="comentarios">Si desea agregar un comentario:</label>
+                                <br>
+                                <textarea name="comentarios"
+                                          id="comentarios"
+                                          cols="30"
+                                          rows="10"
+                                          maxlength="250"
+                                          placeholder="Máximo 250 carácteres"></textarea>
+                            </div>
+                            <div>
+                                <label for="newsletter">Suscribirse al newsletter</label>
+                                <input type="checkbox"
+                                       name="newsletter"
+                                       id="newsletter"
+                                       value="Suscribirse"
+                                       checked>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-outline-secondary mb-3">Enviar</button>
+                            <button type="reset" class="btn btn-outline-secondary mb-3 reset">Limpiar formulario</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
         </main>
-        <footer class="fixed-bottom">
+        <footer class="mt-auto">
             <div>
                 <p>&copy; 2023</p>
             </div>
